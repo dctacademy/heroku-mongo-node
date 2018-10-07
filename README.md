@@ -20,7 +20,7 @@
 
 3. Choose a required plan and select that database
 
-4. Create a ```collection``` and give it a name of your choice, for that collection, create a user and give it ```username``` and ```password```
+4. Create a ```collection``` and give it a name of your choice. Click on ```Account``` and set ```username``` and ```password``` to give access to database (Not your login credentials for mlab). 
 
 5. In ```server/index/app```  configure port:
 ```javascript
