@@ -16,11 +16,11 @@
 
 1. Setup an mlab account
 
-2. Go to MongoDB deployments and create a new deployment
+2. Go to ```MongoDB Deployments``` and ```Create a new deployment```
 
 3. Choose a required plan and select that database
 
-4. Create a database ```user``` and ```password```
+4. Create a ```collection``` and give it a name of your choice, for that collection, create a user and give it ```username``` and ```password```
 
 5. In ```server/index/app```  configure port:
 ```javascript
@@ -29,8 +29,9 @@ port: const PORT = process.env.PORT || 5000;
 
 6. In ```db.js```, ```MONGODB_URI``` set up: 
 ```javascript
-const CONNECTION_URI = process.env.MONGODB_URI || 'mongodb://localhost:<your_id>/rsvp_data' 
+const CONNECTION_URI = process.env.MONGODB_URI || 'mongodb://localhost:<your_id>/<name_of_your_db_folder>' 
 ```
+(```MONGODB_URI``` is available only in production environment, to set it up, follow the next step)
 
 7. Then in Heroku CLI, setup MongoDB URI by running the command:
 (```ds ID``` and ```port``` might change, please use the URI provided to you)
