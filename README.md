@@ -37,7 +37,7 @@ const CONNECTION_URI = process.env.MONGODB_URI || 'mongodb://localhost:<your_id>
 (```ds ID``` and ```port``` might change, please use the URI provided to you)
 
 ```sh
-heroku config:set MONGODB_URI= 'mongodb://<your_username>:<your_password>@ds223653.mlab.com:23653/rsvp_data'
+heroku config:set MONGOLAB_URI='mongodb://<your_username>:<your_password>@ds223653.mlab.com:23653(your mlab collection link given by mlab)/collection_name'
 ```
 
 8. If ```MONGODB_URI``` is not supported, then use ```MONGOLAB_URI```
